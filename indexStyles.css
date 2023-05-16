@@ -1,0 +1,55 @@
+:root {
+    --carousel-caption-text-color: white;
+    --carousel-caption-background-color: rgba(30, 33, 42, .75);
+    --projects-type-h3-margin: 5px;
+}
+
+.projects-container {
+    margin: auto;
+    width: 50%;
+}
+
+.projects-container h1 {
+    color: white;
+    text-align: center;
+}
+
+.projects-type-selection * {
+    margin: 0;
+    padding: 0;
+}
+
+.projects-type-selection h3 {
+    margin-top: var(--projects-type-h3-margin);
+    margin-bottom: var(--projects-type-h3-margin);
+    text-align: center;
+}
+
+.projects-type-selection .web {
+    background-color: lightblue;
+}
+
+.projects-type-selection .games {
+    background-color: lightpink;
+}
+
+
+.carousel img {
+    height: 450px;
+    width: auto;
+}
+
+.carousel-item-image img {
+    height: 250px;
+}
+
+.carousel-item-info {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.carousel-item-info * {
+    text-align: left;
+    color: white;
+}
