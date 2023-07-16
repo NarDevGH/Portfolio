@@ -1,13 +1,4 @@
 
-## ToDO:
-- Completar About Me.
-	- Mostrar las tecnologias que conosco y el nivel que tengo en cada una.
-	- Add Carrousel con certificados
-	- Add Ventana de contacto
-- Add Footer. (con iconos de linkedin, github, itchio)
+## Portfolio
 
-Imagenes Para Carusel:
-- Wordle.
-- Counter Clockwise Drone.
-- Slimes Roundup.
-test
+Landing page to present myself and the work i have done until now and the knowledge i have.
