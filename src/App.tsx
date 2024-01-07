@@ -1,4 +1,4 @@
-import './App.css'
+import './AppStyles.css'
 
 import image from './assets/images/InDevelopment.png'
 
