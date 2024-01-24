@@ -28,36 +28,36 @@ export default function AboutMePage() {
 
   return (
     <>
-    <h1>Hola, Soy Bautista</h1>
-    <p>Soy un programador de Argentina, Buenos Aires. Me apasiona el desarrollo Web, GameDev y BackEnd. Me gusta crear soluciones innovadoras y aprender sobre las formas de abordar problemas que enfrentan las personas y organizaciones. Me considero un aprendiz constante y siempre estoy dispuesto a enfrentar nuevos desafíos y oportunidades de crecimiento.</p>
-    <div className='skills-lists'>
-      <div className='web-skills'>
-        <img className='skill-icon'
-        src={skillIconTemp}/>
-        {SkillList('Languajes',webLangList)}
-        {SkillList('Frameworks',webFrameworkList)}
-        {SkillList('DevTools',webDevToolsList)}
+      <h1>Hola, Soy Bautista</h1>
+      <p>Soy un programador de Argentina, Buenos Aires. Me apasiona el desarrollo Web, GameDev y BackEnd. Me gusta crear soluciones innovadoras y aprender sobre las formas de abordar problemas que enfrentan las personas y organizaciones. Me considero un aprendiz constante y siempre estoy dispuesto a enfrentar nuevos desafíos y oportunidades de crecimiento.</p>
+      <div className='skills-lists'>
+        <div className='web-skills'>
+          <img className='skill-icon'
+          src={skillIconTemp}/>
+          {SkillList('Lenguajes',webLangList)}
+          {SkillList('Frameworks',webFrameworkList)}
+          {SkillList('DevTools',webDevToolsList)}
+        </div>
+        <div className='gamedev-skills'>
+          <img className='skill-icon'
+          src={skillIconTemp}/>
+          {SkillList('Engines',gameEnginesList)}
+          {SkillList('DevTools',gameDevToolsList)}
+        </div>
+        <div className='backend-skills'>
+          <img className='skill-icon'
+          src={skillIconTemp}/>
+          {SkillList('Lenguajes',backLangList)}
+          {SkillList('DevTools',backDevToolsList)}
+        </div>
       </div>
-      <div className='gamedev-skills'>
-        <img className='skill-icon'
-        src={skillIconTemp}/>
-        {SkillList('Engines',gameEnginesList)}
-        {SkillList('DevTools',gameDevToolsList)}
-      </div>
-      <div className='backend-skills'>
-        <img className='skill-icon'
-        src={skillIconTemp}/>
-        {SkillList('Languakes',backLangList)}
-        {SkillList('DevTools',backDevToolsList)}
-      </div>
-    </div>
-    <div className='recent-projects'>
-      <h2>Mis Proyectos Mas Recientes:</h2>
-      <p>Estos son algunos de mis proyectos mas recientes. Si ten interesa ver mas puedes visitar la seccion de <a>Proyectos</a>.</p>
-      <div className='recent-projects-container'>
+      <div className='recent-projects'>
+        <h2>Mis Proyectos Mas Recientes:</h2>
+        <p>Estos son algunos de mis proyectos mas recientes. Si ten interesa ver mas puedes visitar la seccion de <a>Proyectos</a>.</p>
+        <div className='recent-projects-container'>
 
+        </div>
       </div>
-    </div>
     </>
   )
 }

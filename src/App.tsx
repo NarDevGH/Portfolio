@@ -1,13 +1,13 @@
 import './AppStyles.css'
 
-import image from './assets/images/InDevelopment.png'
+import AboutMePage from './pages/about_me/AboutMePageFile'
 
 function App() {
-
-
   return (
-    <img src={image} alt='404' />
+    <>
+      {AboutMePage}
+    </>
   )
 }
 
-export default App
+export default App;
