@@ -4,9 +4,7 @@ import AboutMePage from './pages/about_me/AboutMePageFile'
 
 function App() {
   return (
-    <>
-      {AboutMePage}
-    </>
+      <AboutMePage/>
   )
 }
 
