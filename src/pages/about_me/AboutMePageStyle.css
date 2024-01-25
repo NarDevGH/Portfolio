@@ -1,10 +1,12 @@
 
 .skills-lists{
     display: flex;
+    justify-content:space-around;
 }
 
 .web-skills{
-
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-icon{

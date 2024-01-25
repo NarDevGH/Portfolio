@@ -34,21 +34,21 @@ export default function AboutMePage() {
         <div className='web-skills'>
           <img className='skill-icon'
           src={skillIconTemp}/>
-          {SkillList('Lenguajes',webLangList)}
-          {SkillList('Frameworks',webFrameworkList)}
-          {SkillList('DevTools',webDevToolsList)}
+          {SkillList('Lenguajes:',webLangList)}
+          {SkillList('Frameworks:',webFrameworkList)}
+          {SkillList('DevTools:',webDevToolsList)}
         </div>
         <div className='gamedev-skills'>
           <img className='skill-icon'
           src={skillIconTemp}/>
-          {SkillList('Engines',gameEnginesList)}
-          {SkillList('DevTools',gameDevToolsList)}
+          {SkillList('Engines:',gameEnginesList)}
+          {SkillList('DevTools:',gameDevToolsList)}
         </div>
         <div className='backend-skills'>
           <img className='skill-icon'
           src={skillIconTemp}/>
-          {SkillList('Lenguajes',backLangList)}
-          {SkillList('DevTools',backDevToolsList)}
+          {SkillList('Lenguajes:',backLangList)}
+          {SkillList('DevTools:',backDevToolsList)}
         </div>
       </div>
       <div className='recent-projects'>
