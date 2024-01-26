@@ -1,25 +1,13 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+
+import NavBar from '../../modules/navbar/NavbarFile'
 
 import './LayoutStyles.css'
 
 export default function Layout() {
   return (
     <>
-      <nav className="navbar">
-          <div className="navbar-button">
-            <Link to="/">Home</Link>
-          </div>
-          <div className="navbar-button">
-            <Link to="/projects">Proyectos</Link>
-          </div>
-          <div className="navbar-button">
-            <Link to="/articles">Blogs</Link>
-          </div>
-          <div className="navbar-button">
-            <Link to="/contact">Contacto</Link>
-          </div>
-      </nav>
-
+      <NavBar/>
       <Outlet />
     </>
   );

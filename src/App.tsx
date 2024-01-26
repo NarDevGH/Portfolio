@@ -12,6 +12,7 @@ import './AppStyles.css'
 
 function App() {
   return (
+    <div className="app">
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout/>}>
@@ -23,6 +24,7 @@ function App() {
       </Route>
     </Routes>
   </BrowserRouter>
+  </div>
   )
 }
 
