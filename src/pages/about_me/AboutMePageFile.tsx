@@ -16,7 +16,9 @@ function SkillList(tittle:string,items:string[]){
 
 export default function AboutMePage() {
 
-  const skillIconTemp = 'https://www.pinclipart.com/picdir/big/51-517260_vector-screen-monitor-icon-banner-royalty-free-black.png';
+  const webDevIcon = 'https://i.imgur.com/qnbIYuV.png';
+  const gameDevIcon = 'https://i.imgur.com/XBdstP7.png';
+  const backendDevIcon = 'https://i.imgur.com/Pt3mCuJ.png';
 
   const webLangList = ['JavaScript','TypeScript','C#'];
   const backLangList = ['C#','Java','Python'];
@@ -33,20 +35,20 @@ export default function AboutMePage() {
       <div className='skills-lists'>
         <div className='web-skills'>
           <img className='skill-icon'
-          src={skillIconTemp}/>
+          src={webDevIcon}/>
           {SkillList('Lenguajes:',webLangList)}
           {SkillList('Frameworks:',webFrameworkList)}
           {SkillList('DevTools:',webDevToolsList)}
         </div>
         <div className='gamedev-skills'>
           <img className='skill-icon'
-          src={skillIconTemp}/>
+          src={gameDevIcon}/>
           {SkillList('Engines:',gameEnginesList)}
           {SkillList('DevTools:',gameDevToolsList)}
         </div>
         <div className='backend-skills'>
           <img className='skill-icon'
-          src={skillIconTemp}/>
+          src={backendDevIcon}/>
           {SkillList('Lenguajes:',backLangList)}
           {SkillList('DevTools:',backDevToolsList)}
         </div>
