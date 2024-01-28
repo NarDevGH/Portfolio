@@ -4,11 +4,20 @@
     justify-content:space-around;
 }
 
-.web-skills{
+.skill-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .skill-icon{
     width: 64px;
+}
+
+.skill-list{
+    margin: 1rem ;
+}
+ 
+.skill-list .tittle{
+    text-align: center;
 }

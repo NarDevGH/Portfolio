@@ -1,16 +1,14 @@
 import './AboutMePageStyle.css'
 
 function SkillList(tittle:string,items:string[]){
-  return <>
-    <p>{tittle}</p>
-    <ul>
+  return <div className='skill-list'>
+    <p className='tittle'>{tittle}</p>
       {
         items.map((item) => {
-          return <li>{item}</li>
+          return <p>- {item}</p>
         })
       }
-    </ul>
-  </>
+  </div>
 }
 
 
@@ -33,20 +31,20 @@ export default function AboutMePage() {
       <h1>Hola, Soy Bautista</h1>
       <p>Soy un programador de Argentina, Buenos Aires. Me apasiona el desarrollo Web, GameDev y BackEnd. Me gusta crear soluciones innovadoras y aprender sobre las formas de abordar problemas que enfrentan las personas y organizaciones. Me considero un aprendiz constante y siempre estoy dispuesto a enfrentar nuevos desafíos y oportunidades de crecimiento.</p>
       <div className='skills-lists'>
-        <div className='web-skills'>
+        <div className='skill-container'>
           <img className='skill-icon'
           src={webDevIcon}/>
           {SkillList('Lenguajes:',webLangList)}
           {SkillList('Frameworks:',webFrameworkList)}
           {SkillList('DevTools:',webDevToolsList)}
         </div>
-        <div className='gamedev-skills'>
+        <div className='skill-container'>
           <img className='skill-icon'
           src={gameDevIcon}/>
           {SkillList('Engines:',gameEnginesList)}
           {SkillList('DevTools:',gameDevToolsList)}
         </div>
-        <div className='backend-skills'>
+        <div className='skill-container'>
           <img className='skill-icon'
           src={backendDevIcon}/>
           {SkillList('Lenguajes:',backLangList)}
