@@ -1,4 +1,12 @@
 
+.introduction{
+    margin: 5rem 5rem;
+}
+
+.introduction p{
+    font-size: 1.5em;
+}
+
 .skills-lists{
     display: flex;
     justify-content:space-around;
@@ -17,6 +25,7 @@
     align-items: center;
 }
 
+
 .skill-icon{
     width: 64px;
 }
@@ -26,5 +35,9 @@
 }
  
 .skill-list .tittle{
+    text-align: center;
+}
+
+.recent-projects{
     text-align: center;
 }

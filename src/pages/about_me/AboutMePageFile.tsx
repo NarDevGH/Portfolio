@@ -28,8 +28,10 @@ export default function AboutMePage() {
 
   return (
     <>
-      <h1>Hola, Soy Bautista</h1>
-      <p>Soy un programador de Argentina, Buenos Aires. Me apasiona el desarrollo Web, GameDev y BackEnd. Me gusta crear soluciones innovadoras y aprender sobre las formas de abordar problemas que enfrentan las personas y organizaciones. Me considero un aprendiz constante y siempre estoy dispuesto a enfrentar nuevos desafíos y oportunidades de crecimiento.</p>
+      <div className='introduction'>
+        <h1>Hola, Soy Bautista 👋</h1>
+        <p>Soy un programador de Argentina, Buenos Aires. Me apasiona el desarrollo Web, GameDev y BackEnd. Me gusta crear soluciones innovadoras y aprender sobre las formas de abordar problemas que enfrentan las personas y organizaciones. Me considero un aprendiz constante y siempre estoy dispuesto a enfrentar nuevos desafíos y oportunidades de crecimiento.</p>
+      </div>
       <div className='skills-lists'>
         <div className='skill-container'>
           <img className='skill-icon'
