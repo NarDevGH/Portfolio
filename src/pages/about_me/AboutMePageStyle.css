@@ -4,6 +4,13 @@
     justify-content:space-around;
 }
 
+.skills-separator{
+    height: auto;
+    width: .1rem;
+    background-color: gray;
+    border-radius: 2px;
+}
+
 .skill-container{
     display: flex;
     flex-direction: column;

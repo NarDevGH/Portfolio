@@ -38,12 +38,14 @@ export default function AboutMePage() {
           {SkillList('Frameworks:',webFrameworkList)}
           {SkillList('DevTools:',webDevToolsList)}
         </div>
+        <div className='skills-separator'/>
         <div className='skill-container'>
           <img className='skill-icon'
           src={gameDevIcon}/>
           {SkillList('Engines:',gameEnginesList)}
           {SkillList('DevTools:',gameDevToolsList)}
         </div>
+        <div className='skills-separator'/>
         <div className='skill-container'>
           <img className='skill-icon'
           src={backendDevIcon}/>
