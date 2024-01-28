@@ -1,14 +1,24 @@
 
 .profilePic{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 3rem;
-    margin-right: .5rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 4rem;
+    margin-right: 1rem;
 }
 
 .navbar{
     display: flex;
     align-items: center;
+    margin-top: 1rem;
+}
+
+.navbar hr{
+    border-color: blue;
+    width: 10%;
+}
+
+.navbar h3{
+    font-size: 1.5em;
 }
 
 .navbar div{
@@ -16,6 +26,7 @@
 }
 
 .navbar-links{
+    margin-top: .5rem;
     display: flex;
     width: 25%;
     height: 2rem;
