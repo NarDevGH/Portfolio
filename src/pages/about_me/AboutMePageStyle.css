@@ -7,6 +7,14 @@
     font-size: 1.5em;
 }
 
+.skills{
+    text-align: center;
+}
+
+.skills h1{
+    margin-bottom: 3rem;
+}
+
 .skills-lists{
     display: flex;
     justify-content:space-around;
@@ -27,15 +35,7 @@
 
 
 .skill-icon{
-    width: 64px;
-}
-
-.skill-list{
-    margin: 1rem 0;
-}
- 
-.skill-list .tittle{
-    text-align: center;
+    width: 80px;
 }
 
 .recent-projects{

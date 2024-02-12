@@ -27,29 +27,33 @@ export default function AboutMePage() {
         <h1>Hola, Soy Bautista 👋</h1>
         <p>Soy un programador de Argentina, Buenos Aires. Me apasiona el desarrollo Web, GameDev y BackEnd. Me gusta crear soluciones innovadoras y aprender sobre las formas de abordar problemas que enfrentan las personas y organizaciones. Me considero un aprendiz constante y siempre estoy dispuesto a enfrentar nuevos desafíos y oportunidades de crecimiento.</p>
       </div>
-      <div className='skills-lists'>
-        {/* Web-Skills */}
-        <div className='skill-container'>
-          <img className='skill-icon' src={webDevIcon}/>
-          <SkillList tittle='Lenguajes:' items={webLangList}/>
-          <SkillList tittle='Frameworks:' items={webFrameworkList}/>
-          <SkillList tittle='DevTools:' items={webDevToolsList}/>
-        </div>
-        <div className='skills-separator'/>
-        {/* Game-Skills */}
-        <div className='skill-container'>
-          <img className='skill-icon'
-          src={gameDevIcon}/>
-          <SkillList tittle='Engines:' items={gameEnginesList}/>
-          <SkillList tittle='DevTools:' items={gameDevToolsList}/>
-        </div>
-        <div className='skills-separator'/>
-        {/* BackEnd-Skills */}
-        <div className='skill-container'>
-          <img className='skill-icon'
-          src={backendDevIcon}/>
-          <SkillList tittle='Lenguajes:' items={backLangList}/>
-          <SkillList tittle='DevTools:' items={backDevToolsList}/>
+      <div className='skills'>
+        <h1>HABILIDADES INFORMATICAS</h1>
+        <div className='skills-lists'>
+          {/* Web-Skills */}
+          <div className='skill-container'>
+            <h3>WEB</h3>
+            <img className='skill-icon' src={webDevIcon}/>
+            <SkillList tittle='Lenguajes:' items={webLangList}/>
+            <SkillList tittle='Frameworks:' items={webFrameworkList}/>
+            <SkillList tittle='DevTools:' items={webDevToolsList}/>
+          </div>
+          <div className='skills-separator'/>
+          {/* Game-Skills */}
+          <div className='skill-container'>
+            <h3>GAMEDEV</h3>
+            <img className='skill-icon' src={gameDevIcon}/>
+            <SkillList tittle='Engines:' items={gameEnginesList}/>
+            <SkillList tittle='DevTools:' items={gameDevToolsList}/>
+          </div>
+          <div className='skills-separator'/>
+          {/* BackEnd-Skills */}
+          <div className='skill-container'>
+            <h3>BACKEND</h3>
+            <img className='skill-icon' src={backendDevIcon}/>
+            <SkillList tittle='Lenguajes:' items={backLangList}/>
+            <SkillList tittle='DevTools:' items={backDevToolsList}/>
+          </div>
         </div>
       </div>
       <div className='recent-projects'>
