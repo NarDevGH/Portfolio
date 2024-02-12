@@ -1,3 +1,5 @@
+import ProjectCard from '../../modules/project_card/ProjectCardFile';
+
 import './AboutMePageStyle.css'
 
 function SkillList(tittle:string,items:string[]){
@@ -25,6 +27,8 @@ export default function AboutMePage() {
   const backDevToolsList = ['Microsoft SQL Manager'];
   const gameEnginesList = ['Unity (C#)', 'Godot (GDScript)', 'Roblox (Lua)', 'Contruct'];
   const webFrameworkList = ['ReactJs','Asp.Net'];
+
+  const imgUrl = 'https://i.imgur.com/RCBtsh0.png';
 
   return (
     <>
@@ -59,7 +63,12 @@ export default function AboutMePage() {
         <h2>Mis Proyectos Mas Recientes:</h2>
         <p>Estos son algunos de mis proyectos mas recientes. Si ten interesa ver mas puedes visitar la seccion de <a>Proyectos</a>.</p>
         <div className='recent-projects-container'>
-
+          <ProjectCard tittle='COUNTER CLOCKWISE DRONE' imgUrl={imgUrl}/>
+          <ProjectCard tittle='Project 2' imgUrl={imgUrl}/>
+          <ProjectCard tittle='Project 3' imgUrl={imgUrl}/>
+          <ProjectCard tittle='Project 4' imgUrl={imgUrl}/>
+          <ProjectCard tittle='Project 5' imgUrl={imgUrl}/>
+          <ProjectCard tittle='Project 6' imgUrl={imgUrl}/>
         </div>
       </div>
     </>

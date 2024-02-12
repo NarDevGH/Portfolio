@@ -40,4 +40,11 @@
 
 .recent-projects{
     text-align: center;
+    margin-top: 5rem;
+}
+
+.recent-projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
