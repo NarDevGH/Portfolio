@@ -26,14 +26,14 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     text-align: center;
-    line-height: 50px;
+    line-height: 70px;
     background-color: rgba(71, 71, 71, 0);
     color: rgba(255, 255, 255, 0);
 }
 
 .project_card:hover .showInfo{
-    bottom: 50px;
-    height: 20%;
+    bottom: 75px;
+    height: 31%;
     visibility: visible;
     transition: 1s;
     background-color: rgba(71, 71, 71, 0.466);
