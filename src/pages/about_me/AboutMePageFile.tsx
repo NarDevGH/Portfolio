@@ -1,18 +1,8 @@
 import ProjectCard from '../../modules/project_card/ProjectCardFile';
 
+import SkillList from '../../modules/list/SkillListFile';
+
 import './AboutMePageStyle.css'
-
-function SkillList(tittle:string,items:string[]){
-  return <div className='skill-list'>
-    <p className='tittle'>{tittle}</p>
-      {
-        items.map((item) => {
-          return <p>- {item}</p>
-        })
-      }
-  </div>
-}
-
 
 export default function AboutMePage() {
 
@@ -28,6 +18,7 @@ export default function AboutMePage() {
   const gameEnginesList = ['Unity (C#)', 'Godot (GDScript)', 'Roblox (Lua)', 'Contruct'];
   const webFrameworkList = ['ReactJs','Asp.Net'];
 
+  //temp
   const imgUrl = 'https://i.imgur.com/RCBtsh0.png';
 
   return (
@@ -37,26 +28,28 @@ export default function AboutMePage() {
         <p>Soy un programador de Argentina, Buenos Aires. Me apasiona el desarrollo Web, GameDev y BackEnd. Me gusta crear soluciones innovadoras y aprender sobre las formas de abordar problemas que enfrentan las personas y organizaciones. Me considero un aprendiz constante y siempre estoy dispuesto a enfrentar nuevos desafíos y oportunidades de crecimiento.</p>
       </div>
       <div className='skills-lists'>
+        {/* Web-Skills */}
         <div className='skill-container'>
-          <img className='skill-icon'
-          src={webDevIcon}/>
-          {SkillList('Lenguajes:',webLangList)}
-          {SkillList('Frameworks:',webFrameworkList)}
-          {SkillList('DevTools:',webDevToolsList)}
+          <img className='skill-icon' src={webDevIcon}/>
+          <SkillList tittle='Lenguajes:' items={webLangList}/>
+          <SkillList tittle='Frameworks:' items={webFrameworkList}/>
+          <SkillList tittle='DevTools:' items={webDevToolsList}/>
         </div>
         <div className='skills-separator'/>
+        {/* Game-Skills */}
         <div className='skill-container'>
           <img className='skill-icon'
           src={gameDevIcon}/>
-          {SkillList('Engines:',gameEnginesList)}
-          {SkillList('DevTools:',gameDevToolsList)}
+          <SkillList tittle='Engines:' items={gameEnginesList}/>
+          <SkillList tittle='DevTools:' items={gameDevToolsList}/>
         </div>
         <div className='skills-separator'/>
+        {/* BackEnd-Skills */}
         <div className='skill-container'>
           <img className='skill-icon'
           src={backendDevIcon}/>
-          {SkillList('Lenguajes:',backLangList)}
-          {SkillList('DevTools:',backDevToolsList)}
+          <SkillList tittle='Lenguajes:' items={backLangList}/>
+          <SkillList tittle='DevTools:' items={backDevToolsList}/>
         </div>
       </div>
       <div className='recent-projects'>
