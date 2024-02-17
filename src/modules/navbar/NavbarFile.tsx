@@ -14,16 +14,16 @@ export default function NavBar(){
                 <hr/>
                 <nav className="navbar-links">
                     <div className="navbar-link">
-                        <Link to="/">Home</Link>
+                        <Link to="/">HOME</Link>
                     </div>
                     <div className="navbar-link">
-                        <Link to="/projects">Proyectos</Link>
+                        <Link to="/projects">PROYECTOS</Link>
                     </div>
                     <div className="navbar-link">
-                        <Link to="/articles">Blogs</Link>
+                        <Link to="/articles">BLOGS</Link>
                     </div>
                     <div className="navbar-link">
-                        <Link to="/contact">Contacto</Link>
+                        <Link to="/contact">CONTACTO</Link>
                     </div>
                 </nav>
             </div>
