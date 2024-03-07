@@ -16,15 +16,6 @@ export default function NavBar(){
                     <div className="navbar-link">
                         <Link to="/">HOME</Link>
                     </div>
-                    <div className="navbar-link">
-                        <Link to="/projects">PROYECTOS</Link>
-                    </div>
-                    <div className="navbar-link">
-                        <Link to="/articles">BLOGS</Link>
-                    </div>
-                    <div className="navbar-link">
-                        <Link to="/contact">CONTACTO</Link>
-                    </div>
                 </nav>
             </div>
         </div>
