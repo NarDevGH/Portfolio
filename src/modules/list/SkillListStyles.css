@@ -1,0 +1,13 @@
+
+.skill-list{
+    margin-top: 1rem;
+}
+
+.tittle{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.skill-list p{
+    width: max-content;
+}
