@@ -1,19 +1,22 @@
+import { ReactNode } from 'react';
 import './ProjectCardStyles.css'
 
-type ProjectCardProps ={
-    tittle: string
-    imgUrl: string
-    url: string
+type Project ={
+    id: number;
+    tittle: string;
+    description: string;
+    web_url: string;
+    repository_url: string;
+    img_url: string;
 }
 
-
-export default function ProjectCard({tittle,imgUrl,url}:ProjectCardProps){
+export default function ProjectCard(props:Project):ReactNode{
     return (
-        <div className="project_card" onClick={ () => window.location.href = `${url}`}>
+        <div key={props.projectData.id} className="project_card" onClick={ () => window.location.href = `${props.projectData.project_url}`}>
             <img className="background_img"
-            src={imgUrl}/>
+            src={props.projectData.img_url}/>
             <div className="info showInfo">
-                <p>{tittle}</p>
+                <p>{props.projectData.tittle}</p>
             </div>
         </div>
     )

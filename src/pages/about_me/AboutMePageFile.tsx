@@ -1,10 +1,24 @@
-import ProjectCard from '../../modules/project_card/ProjectCardFile';
+import ProjectsJson from '../../assets/data/projects.json'
 
+import ProjectCard from '../../modules/project_card/ProjectCardFile';
 import SkillList from '../../modules/list/SkillListFile';
 
 import './AboutMePageStyle.css'
 
+type Project ={
+  id: number;
+  tittle: string;
+  description: string;
+  project_url: string;
+  repository_url: string;
+  img_url: string;
+}
+
 export default function AboutMePage() {
+
+  const PROJECTS_CARDS_NUMBER:number = 6;  
+
+  const PROJECTS_DATA:Project[] = JSON.parse(JSON.stringify(ProjectsJson));
 
   const webDevIcon = 'https://i.imgur.com/qnbIYuV.png';
   const gameDevIcon = 'https://i.imgur.com/XBdstP7.png';
@@ -17,15 +31,7 @@ export default function AboutMePage() {
   const backDevToolsList = ['Microsoft SQL Manager'];
   const gameEnginesList = ['Unity (C#)', 'Godot (GDScript)', 'Roblox (Lua)', 'Contruct'];
   const webFrameworkList = ['ReactJs','Asp.Net'];
-
-  //temp
-  const counterClockwiseDrone_imgUrl = 'https://i.imgur.com/RCBtsh0.png';
-  const freakyCircus_imgUrl = 'https://i.imgur.com/vmulvgS.png';
-  const wordle_imgUrl = 'https://i.imgur.com/hS87UgY.png';
-  const clubProgramador_imgUrl = 'https://i.imgur.com/QPqENc7.png';
-  const calculadoraImc_imgUrl = 'https://i.imgur.com/WZeNVpF.png';
-  const schokoland_imgUrl = 'https://i.imgur.com/eAd5mAB.png';
-
+  
   return (
     <>
       <section className='introduction'>
@@ -65,12 +71,12 @@ export default function AboutMePage() {
         <h2>Mis Proyectos Mas Recientes:</h2>
         <p>Estos son algunos de mis proyectos mas recientes. Si ten interesa ver mas puedes visitar la seccion de <a>Proyectos</a>.</p>
         <div className='recent-projects-container'>
-          <ProjectCard tittle='CLUB PROGRAMADORES' imgUrl={clubProgramador_imgUrl} url='https://club-programadores.netlify.app/'/>
-          <ProjectCard tittle='BOMBON FACTORY' imgUrl={schokoland_imgUrl} url='https://schokoland-bombon-factory.netlify.app/'/>
-          <ProjectCard tittle='CALCULADORA IMC' imgUrl={calculadoraImc_imgUrl} url='https://calculadora-imc-p5.netlify.app/'/>
-          <ProjectCard tittle='FREAKY CIRCUS' imgUrl={freakyCircus_imgUrl} url='https://nar-dev.itch.io/freaky-circus'/>
-          <ProjectCard tittle='COUNTER CLOCKWISE DRONE' imgUrl={counterClockwiseDrone_imgUrl} url='https://nar-dev.itch.io/counter-clockwise-drone'/>
-          <ProjectCard tittle='WORDLE' imgUrl={wordle_imgUrl} url='https://nar-dev.itch.io/nar-wordle'/>
+          {
+            PROJECTS_DATA.splice(0,PROJECTS_CARDS_NUMBER).map((data) =>
+            {
+              return <ProjectCard projectData={data}></ProjectCard>
+            })
+          }
         </div>
       </section>
     </>
