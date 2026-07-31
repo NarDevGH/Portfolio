@@ -7,11 +7,16 @@ export default function NavBar(){
 
     return (
         <div className="navbar">
-            <img className="profilePic"
-                src={profilePicUrl}/>
-            <div>
-                <h3>BAUTISTA MATEO</h3>
-                <hr/>
+            <div className="navbar-left_container">
+                <img className="profilePic"
+                    src={profilePicUrl}/>
+                    <div className="name_username-container">
+                        <h3>BAUTISTA MATEO</h3>
+                        <hr/>
+                        <h3>NARDEV</h3>
+                    </div>
+            </div>
+            <div className="navbar-middle_container">
                 <nav className="navbar-links">
                     <div className="navbar-link">
                         <Link to="/">HOME</Link>
@@ -26,6 +31,18 @@ export default function NavBar(){
                         <Link to="/contact">CONTACTO</Link>
                     </div>
                 </nav>
+            </div>
+            <div className="navbar-right_container">
+                <div className="language-selector">
+                    <img className="language-selector-icon" src="src/assets/images/bandera_argentina.png"/>
+                    <p>Español</p>
+                </div>
+                <div className="language-selector">
+                    <img className="language-selector-icon" src="src/assets/images/bandera_usa.png"/>
+                    <p>English</p>
+                </div>
+            </div>
+            <div>
             </div>
         </div>
     )

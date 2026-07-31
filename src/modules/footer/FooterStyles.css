@@ -1,0 +1,29 @@
+
+.footer_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #42414171;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    min-height: 100px;
+    margin-top: 4rem;
+}
+
+.links_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social_media_container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social_media_container img{
+    width: 30px;
+}

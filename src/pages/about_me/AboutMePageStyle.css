@@ -1,58 +1,64 @@
+.page-container{
+    padding: 0 5rem;
+}
+
+.content-container{
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: #42414171;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    min-height: 100px;
+    margin-top: 4rem;
+}
 
 .introduction{
-    margin-top: 7rem;
-    margin-bottom: 12rem;
+    display: flex;
 }
 
 .introduction p{
-    font-size: 1.5em;
-}
-
-.skills{
-    text-align: center;
-}
-
-.skills h1{
-    margin-bottom: 3rem;
-    text-decoration: underline;
-}
-
-.skills-lists{
-    display: flex;
-    justify-content:space-around;
-}
-
-.skills-separator{
-    height: auto;
-    width: .1rem;
-    background-color: gray;
-    border-radius: 2px;
-}
-
-.skill-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skill-tittle{
-    margin-bottom: 0.5rem;
-}
-
-.skill-icon{
-    width: 80px;
-    height: 80px;
-    margin-bottom: 1rem;
+    font-size: clamp(1rem, 2vw, 1.5em);
+    line-height: 1.6;
 }
 
 .recent-projects{
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 4rem;
+    padding: 0 1rem;
+    font-size: clamp(1rem, 2vw, 1.5em);
+    line-height: 1.6;
+    text-align: left;
 }
 
 .recent-projects-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-items: center;
     margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .introduction {
+        margin: 2rem 0 3rem;
+    }
+
+    .skills-lists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-separator {
+        display: none;
+    }
+
+    .skill-container {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .recent-projects-container {
+        grid-template-columns: 1fr;
+    }
 }
