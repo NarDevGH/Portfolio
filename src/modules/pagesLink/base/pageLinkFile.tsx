@@ -1,4 +1,4 @@
-import './PageLinkStyles.css'
+import './pageLinkStyles.css'
 
 type PageLinkProps = {
     url?: string
