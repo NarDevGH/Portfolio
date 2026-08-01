@@ -7,10 +7,10 @@ import Footer from "../../modules/footer/Footer";
 
 export default function Layout() {
   return (
-    <>
+    <div className="page-content">
       <NavBar/>
       <Outlet />
       <Footer/>
-    </>
+    </div>
   );
 }
