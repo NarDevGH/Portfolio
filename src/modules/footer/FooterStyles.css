@@ -1,0 +1,30 @@
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.contact-info-container h3{
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.links_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social_media_container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social_media_container img{
+    width: 30px;
+}

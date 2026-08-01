@@ -1,0 +1,13 @@
+.page-link-container{
+    display: flex;
+    border: 0.1rem solid green;
+    padding: 0.5rem;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.page-content-ammount{
+    margin-left: 1rem;
+}

@@ -2,49 +2,111 @@
     {
         "id": 1,
         "tittle": "Counter Clockwise Drone",
-        "description": "",
+        "status": "Published",
+        "description_esp": "Juego simple desarrollado en Godot donde controlas un dron que debe ordenar paquetes en un almacén o un misil es lanzado para destruirlo de tomarse demaciado tiempo haciendolo.",
+        "description_eng": "Simple Godot game where you control a drone who haste to sort packages in a warehouse or a missile get released to destroy him if it doesnt does it fast enough.",
         "project_url": "https://nar-dev.itch.io/counter-clockwise-drone",
         "repository_url": "https://github.com/NarDevGH/Unity-Counter_Clockwise_Drone",
-        "img_url": "https://i.imgur.com/RCBtsh0.png"
+        "img_url": "https://i.imgur.com/RCBtsh0.png",
+        "date": "30/05/2023"
     },
     {
         "id": 2,
         "tittle": "Freaky Circus",
-        "description": "",
+        "status": "Published",
+        "description_esp": "Juego desarrolaldo en Unity durante la Rhomita GameJam de 2023 cuya tematia fue 'Nada es lo que parece', por lo que se implementa esta tematica en un tenebroso circo.",
+        "description_eng": "Game developed in Unity during the Rhomita GameJam of 2023 whose theme was 'Nothing is what it seems', so this theme is implemented in a creepy circus.",
         "project_url": "https://nar-dev.itch.io/freaky-circus",
         "repository_url": "",
-        "img_url": "https://i.imgur.com/vmulvgS.png"
+        "img_url": "https://i.imgur.com/vmulvgS.png",
+        "date": "20/06/2023"
     },
     {
         "id": 3,
         "tittle": "Wordle",
-        "description": "",
+        "status": "Published",
+        "description_esp": "Mi propia version del popular juego Wordle, desarrollado en Unity y C#.",
+        "description_eng": "My own version of the popular Wordle game, developed in Unity and C#.",
         "project_url": "https://nar-dev.itch.io/nar-wordle",
         "repository_url": "https://github.com/NarDevGH/Unity-Wordle",
-        "img_url": "https://i.imgur.com/hS87UgY.png"
+        "img_url": "https://i.imgur.com/hS87UgY.png",
+        "date": "01/06/2023"
     },
     {
         "id": 4,
         "tittle": "Club Programadores",
-        "description": "",
+        "status": "Published",
+        "description_esp": "Sitio web desarrollado en React y TailwindCSS para el Club de Programadores.",
+        "description_eng": "Website developed in React and TailwindCSS for the Programmers Club.",
         "project_url": "https://club-programadores.netlify.app/",
         "repository_url": "https://github.com/Club-Programadores/Club-Programadores",
-        "img_url": "https://i.imgur.com/QPqENc7.png"
+        "img_url": "https://i.imgur.com/QPqENc7.png",
+        "date": "30/12/2024"
     },
     {
         "id": 5,
         "tittle": "Schocoland Bombon Factory",
-        "description": "",
+        "status": "Published",
+        "description_esp": "Sitio web desarrollado en React y TailwindCSS para la Fábrica de Bombones Schokoland realizado en un dia como desafio del Club de Programadores.",
+        "description_eng": "Website developed in React and TailwindCSS for the Schokoland Bombon Factory made in one day as a challenge of the Programmers Club.",
         "project_url": "https://schokoland-bombon-factory.netlify.app/",
         "repository_url": "https://github.com/Club-Programadores/Schokoland-Bombon_Factory",
-        "img_url": "https://i.imgur.com/eAd5mAB.png"
+        "img_url": "https://i.imgur.com/eAd5mAB.png",
+        "date": "20/11/2023"
     },
     {
         "id": 6,
         "tittle": "Calculadora IMC",
-        "description": "",
+        "status": "Published",
+        "description_esp": "Calculadora de Índice de Masa Corporal desarrollada en React y TailwindCSS realizada como proyecto del Club de Programadores.",
+        "description_eng": "Body Mass Index calculator developed in React and TailwindCSS as a project of the Programmers Club.",
         "project_url": "https://calculadora-imc-p5.netlify.app/",
         "repository_url": "https://github.com/Club-Programadores/calculadora-IMC",
-        "img_url": "https://i.imgur.com/WZeNVpF.png"
+        "img_url": "https://i.imgur.com/WZeNVpF.png",
+        "date": "03/06/2023"
+    },
+    {
+        "id": 7,
+        "tittle": "Orkish Power of Beliefe",
+        "status": "InDevelopment",
+        "description_esp": "Juego fan desarrollado en Unity que recrea lo mostrado en la animación parodia 'Imperial Guard Vs Orkish Power of Belief' de https://twitter.com/a_tenno?s=20, inspirado en el episodio ORK ORK ORKS del podcast Adeptus Ridiculous",
+        "description_eng": "Unity Fangame that recreates what is shown in the parody animation 'Imperial Guard Vs Orkish Power of Belief' by https://twitter.com/a_tenno?s=20, inspired by the episode ORK ORK ORKS of the podcast Adeptus Ridiculous",
+        "project_url": "https://nar-dev.itch.io/wh40k-fan-game",
+        "repository_url": "",
+        "img_url": "https://i.imgur.com/GQUClnJ.png",
+        "date": "02/06/2025"
+    },
+    {
+        "id": 8,
+        "tittle": "Slimes Roundup",
+        "status": "InDevelopment",
+        "description_esp": "Juego desarrolado en Unity que busca ser un sucesor espiritual del famoso minijuego de Club Penguin 'Puffle Roundup', donde el jugador debe capturar a todos los slimes que se escapan de su corral.",
+        "description_eng": "Unity game that aims to be a spiritual successor to the famous Club Penguin minigame 'Puffle Roundup', where the player must capture all the slimes that escape from their corral.",
+        "project_url": "https://nar-dev.itch.io/slime-roundup",
+        "repository_url": "",
+        "img_url": "https://img.itch.zone/aW1nLzE2MzgzMTk0LnBuZw==/105x83%23/oq18EI.png",
+        "date": "02/06/2025"
+    },
+    {
+        "id": 9,
+        "tittle": "Gamedev Engines",
+        "status": "InDevelopment",
+        "description_esp": "Sitio web desarrollado con next.js que busca ser un HUB donde poder obtener todas las ultimas noticias sobre GameEngies, como tambien un catalogo para poder descubrir el engine que mejor se adapte a tus necesidades.",
+        "description_eng": "Website develop with next.js the aims to be a hub to get all the lates news about game engines, and a catalogue to discoverd them.",
+        "project_url": "https://www.gamedevengines.com/news",
+        "repository_url": "",
+        "img_url": "https://i.imgur.com/zCSbBlw.png",
+        "date": "24/05/2026"
+    },
+    {
+        "id": 10,
+        "tittle": "Unity Console",
+        "status": "InDevelopment",
+        "description_esp": "Projecto de Unity para replicar InGame console con el mismo funcionamiento que tiene la que se encuentra presente en los juegos desarrollados con el Source Engine.",
+        "description_eng": "Project developed in Unity wich aims to recreate the SourceEngine InGame console.",
+        "project_url": "/projects",
+        "repository_url": "/projects",
+        "img_url": "https://i.imgur.com/nfjJehK.png",
+        "date": "19/06/2026"
     }
 ]

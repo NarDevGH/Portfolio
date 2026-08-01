@@ -12,11 +12,11 @@ type Project ={
 
 export default function ProjectCard(props:Project):ReactNode{
     return (
-        <div key={props.projectData.id} className="project_card" onClick={ () => window.location.href = `${props.projectData.project_url}`}>
+        <div key={props.id} className="project_card" onClick={ () => window.location.href = `${props.web_url}`}>
             <img className="background_img"
-            src={props.projectData.img_url}/>
+            src={props.img_url}/>
             <div className="info showInfo">
-                <p>{props.projectData.tittle}</p>
+                <p>{props.tittle}</p>
             </div>
         </div>
     )

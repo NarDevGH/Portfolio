@@ -1,0 +1,15 @@
+
+.social-media-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.social-media-vertical-alignment{
+    flex-direction: column;
+}
+
+.social-media-container img{
+    width: 30px;
+}

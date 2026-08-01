@@ -1,0 +1,78 @@
+{
+     "csharp": {
+      "imagePath": "src/assets/images/icons/skills/csharp-icon.svg",
+      "url": "https://dotnet.microsoft.com/es-es/languages/csharp"
+    },
+    "typescript": {
+      "imagePath": "src/assets/images/icons/skills/typescript-icon.svg",
+      "url": "https://www.typescriptlang.org/"
+    },
+    "ssms": {
+      "imagePath": "src/assets/images/icons/skills/ssms-icon.svg",
+      "url": "https://learn.microsoft.com/es-es/ssms/sql-server-management-studio-ssms"
+    },
+    "unity": {
+      "imagePath": "src/assets/images/icons/skills/unity-icon.svg",
+      "url": "https://unity.com/"
+    },
+    "bash": {
+      "imagePath": "src/assets/images/icons/skills/bash-icon.svg",
+      "url": "https://es.wikipedia.org/wiki/Bash"
+    },
+    "blender": {
+      "imagePath": "src/assets/images/icons/skills/blender-icon.svg",
+      "url": "https://www.blender.org/"
+    },
+    "css": {
+      "imagePath": "src/assets/images/icons/skills/css-icon.svg",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    "html": {
+      "imagePath": "src/assets/images/icons/skills/html-icon.svg",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    "docker": {
+      "imagePath": "src/assets/images/icons/skills/docker-icon.svg",
+      "url": "https://www.docker.com/"
+    },
+    "dotnet": {
+      "imagePath": "src/assets/images/icons/skills/dotnet-icon.svg",
+      "url": "https://dotnet.microsoft.com/es-es/"
+    },
+    "git": {
+      "imagePath": "src/assets/images/icons/skills/git-icon.svg",
+      "url": "https://git-scm.com/"
+    },
+    "jest": {
+      "imagePath": "src/assets/images/icons/skills/jest-icon.svg",
+      "url": "https://jestjs.io/"
+    },
+    "javascript": {
+      "imagePath": "src/assets/images/icons/skills/js-icon.svg",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    "linux": {
+      "imagePath": "src/assets/images/icons/skills/linux-icon.svg",
+      "url": "https://www.linux.org/"
+    },
+    "mysql": {
+      "imagePath": "src/assets/images/icons/skills/mysql-icon.svg",
+      "url": "https://www.mysql.com/"
+    },
+    "node": {
+      "imagePath": "src/assets/images/icons/skills/node-icon.svg",
+      "url": "https://nodejs.org/"
+    },
+    "photoshop": {
+      "imagePath": "src/assets/images/icons/skills/photoshop-icon.svg",
+      "url": "https://www.adobe.com/products/photoshop.html"
+    },
+    "react": {
+      "imagePath": "src/assets/images/icons/skills/react-icon.svg",
+      "url": "https://reactjs.org/"
+    },
+    "selenium": {
+      "imagePath": "src/assets/images/icons/skills/selenium-icon.svg",
+      "url": "https://www.selenium.dev/"
+    }
+}
