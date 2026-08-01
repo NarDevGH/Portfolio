@@ -5,8 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/layout/LayoutFile'
 import NoPage from './pages/no_page/NoPageFile'
 import HomePage from './pages/home/HomeFile'
-import ArticlesPage from './pages/articles/ArticlesPageFile'
-import ContactPage from './pages/contact/ContactPageFile'
 import ProjectsPage from './pages/projects/ProjectsPageFile'
 
 import './AppStyles.css'
@@ -54,8 +52,6 @@ function App() {
           <Route path="/" element={<Layout/>}>
             <Route index element={<HomePage/>} />
             <Route path="projects" element={<ProjectsPage/>} />
-            <Route path="articles" element={<ArticlesPage/>} />
-            <Route path="contact" element={<ContactPage/>} />
             <Route path="*" element={<NoPage/>} />
           </Route>
         </Routes>

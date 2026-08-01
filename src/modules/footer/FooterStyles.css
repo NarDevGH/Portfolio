@@ -1,13 +1,14 @@
-
-.footer_container{
+.contact-info-container{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    background-color: #42414171;
-    padding: 1rem;
-    border-radius: 0.75rem;
-    min-height: 100px;
-    margin-top: 4rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.contact-info-container h3{
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 .links_container{

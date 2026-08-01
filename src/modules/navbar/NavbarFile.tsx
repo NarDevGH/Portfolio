@@ -1,49 +1,56 @@
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 import './NavbarStyles.css'
+import GithubLink from "../socialMedias/GithubLinkFile";
+import ArtstationLink from "../socialMedias/ArtstationLinkFile";
+import LinkedinLink from "../socialMedias/LinkedinLinkFile";
+import ItchioLink from "../socialMedias/ItchioFile";
 
 export default function NavBar(){
-    const profilePicUrl = 'https://i.imgur.com/QZzTd8e.jpg';
+    const profilePicUrl = 'https://i.imgur.com/7nh5dGm.png';
+
+    const getCurrentAge = () => {
+        const birthDate = new Date('2001-01-11');
+        const currentDate = new Date();
+        let age = currentDate.getFullYear() - birthDate.getFullYear();
+        const monthDifference = currentDate.getMonth() - birthDate.getMonth();
+        if (monthDifference < 0) {
+            age--;
+        }
+        return age;
+    }
 
     return (
         <div className="container navbar">
             <div className="left-container">
                 <div className="profilepic-container">
                     <img className="profilePic"
-                        //src={profilePicUrl}/>
-                        src="src/assets/images/profile_pic2.jpeg"/>
+                        //src="src/assets/images/profile_pic2.jpeg"/>
+                        src={profilePicUrl}/>
                 </div>
 
                 <div className="personal-info-container">
                     <h3>Bautista Mateo</h3>
                     <hr/>
                     <h3>Nardev</h3>
+                <div className="region-container">
+                    <img className="region-icon" src="src/assets/images/icons/flags/argentina.png" alt="Argentina flag." />
+                    <p className="region-label">Argentina</p>
+                </div>
                 </div>
             </div>
             <div className="right-container">
                 <div className="level-container">
                     <p className="level-title-text">Nivel</p>
                     <div className="level-ammount">
-                        <p className="level-ammount-text">25</p>
+                        <p className="level-ammount-text">{getCurrentAge()}</p>
                     </div>
                 </div>
                 <div className="social-links-container">
-                    <div className="social_media_container" onClick={ () => window.location.href = 'https://github.com/NarDevGH'}>
-                        <img className="icon" src="src/assets/images/github_icon.png" alt="github" />
-                        <p>Github</p>
-                    </div>
-                    <div className="social_media_container" onClick={ () => window.location.href = 'https://nar-dev.itch.io/'}>
-                        <img className="icon" src="src/assets/images/itch_icon.webp" alt="itch" />
-                        <p>Itch</p>
-                    </div>
-                    <div className="social_media_container" onClick={ () => window.location.href = 'https://www.linkedin.com/in/bautista-mateo/'}>
-                        <img className="icon" src="src/assets/images/linkedin_icon.webp" alt="linkedin" />
-                        <p>LinkedIn</p>
-                    </div>
-                    <div className="social_media_container" onClick={ () => window.location.href = 'https://www.artstation.com/nardev'}>
-                        <img className="icon" src="src/assets/images/artstation_icon.png" alt="artstation" />
-                        <p>ArtStation</p>
-                    </div>
+                    <GithubLink/>
+                    <ItchioLink/>
+                    <LinkedinLink/>
+                    <ArtstationLink/>
                 </div>
             </div>
         </div>

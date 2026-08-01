@@ -1,26 +1,41 @@
 import ProjectsJson from '../../assets/data/projects.json'
 
-import ProjectCard from '../../modules/project_card/ProjectCardFile';
-import SkillList from '../../modules/list/SkillListFile';
-
 import './HomePageStyle.css'
+import PageLink from '../../modules/pagesLink/base/pageLinkFile';
+import SkillList from '../../modules/list/SkillListFile';
 
 type Project ={
   id: number;
   tittle: string;
-  description: string;
+  status: string;
+  description_esp: string;
+  description_eng: string;
   project_url: string;
   repository_url: string;
   img_url: string;
-  web_url: string;
+  date: string;
 }
 
 export default function AboutMePage() {
 
-  const PROJECTS_CARDS_NUMBER:number = 4;  
+  const PROJECTS_DISPLAYED_NUMBER:number = 4;  
 
-  const PROJECTS_DATA:Project[] = JSON.parse(JSON.stringify(ProjectsJson));
+  const getProjectsData:Project[] = JSON.parse(JSON.stringify(ProjectsJson));
 
+  const getProjectsDataSortedByDate = () => {
+    return [...getProjectsData].sort((a, b) => {
+      const [dayA, monthA, yearA] = a.date.split('/').map(Number);
+      const [dayB, monthB, yearB] = b.date.split('/').map(Number);
+
+      if (yearA !== yearB) return yearB - yearA;
+      if (monthA !== monthB) return monthB - monthA;
+      return dayB - dayA;
+    });
+  }
+
+  const getFirstXAmmountOfProjectsData = (count: number) => {
+    return getProjectsDataSortedByDate().slice(0, count);
+  }
   
   return (
     <div className='page-container'>
@@ -33,15 +48,15 @@ export default function AboutMePage() {
           <h2 className='container-title'>Proyectos Recientes</h2>
           <div className='projects-list'>
            {
-             PROJECTS_DATA.splice(0,PROJECTS_CARDS_NUMBER).map((data) =>
+             getFirstXAmmountOfProjectsData(PROJECTS_DISPLAYED_NUMBER).map((data) =>
              {
-               return <div className='project-container' key={data.id} onClick={ () => window.location.href = `${data.web_url}`}>
+               return <div className='project-container' key={data.id} onClick={ () => window.location.href = `${data.project_url}`}>
                 <div className='project-container-left'>
                   <img className='project-image' src={data.img_url} alt={data.tittle}/>
                   <h3 className='project-title'>{data.tittle}</h3>
                 </div>
                 <div className='project-container-right'>
-                  <p className='project-date'>regitrado en 2025</p>
+                  <p className='project-date'>{data.date}</p>
                 </div>
               </div>
              })
@@ -49,28 +64,12 @@ export default function AboutMePage() {
          </div>
         </section>
       </div>
-      <div className='right_container'>
-        <section className='container'>
-          <h1>test</h1>
-        </section>
+      <div className='container right_container'>
+        <PageLink url='/' label='Home'/>
+        <PageLink url='/projects' label='Mis Proyectos' contentAmmount={getProjectsData.length}/>
+        <PageLink label='Conocimientos' contentAmmount={22}/>
+        <SkillList/>
       </div>
     </div>
   )
 }
-
-//  <section className='content-container introduction'>
-//         <h1>Hola, Soy Bautista 👋</h1>
-//         <p>Soy un programador de Argentina, Buenos Aires. Me apasiona el desarrollo Web, GameDev y BackEnd. Me gusta crear soluciones innovadoras y aprender sobre las formas de abordar problemas informaticos que enfrentan las personas y organizaciones. Me considero un aprendiz constante y siempre estoy dispuesto a enfrentar nuevos desafíos y oportunidades de crecimiento.</p>
-//       </section>
-//       <section className='content-container recent-projects'>
-//         <h2>Mis Proyectos Mas Recientes:</h2>
-//         <p>Estos son algunos de mis proyectos mas recientes. Si ten interesa ver mas puedes visitar en la seccion de <a>Proyectos</a>.</p>
-//         <div className='recent-projects-container'>
-//           {
-//             PROJECTS_DATA.splice(0,PROJECTS_CARDS_NUMBER).map((data) =>
-//             {
-//               return <ProjectCard {...data}></ProjectCard>
-//             })
-//           }
-//         </div>
-//       </section>

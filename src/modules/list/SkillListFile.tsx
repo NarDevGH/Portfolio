@@ -1,23 +1,24 @@
-
-import { ReactNode } from 'react';
 import './SkillListStyles.css'
+import ProjectsJson from '../../assets/data/skills.json'
 
-type skillListProps = {
-    tittle: string;
-    items: string[];
+type SkillData = {
+  imagePath: string
+  url: string
 }
 
-export default function SkillList({tittle,items}:skillListProps):ReactNode{
+export default function SkillList(){
+
+  const SKILLS = JSON.parse(JSON.stringify(ProjectsJson)) as Record<string, SkillData>;
+
     return (
-      <div className='skill-list'>
-        <h3 className='tittle'>{tittle}</h3>
-        <div className='skills'>
-          {
-            items.map((item) => {
-              return <p>- {item}</p>
-            })
-          }
-        </div>
+      <div className='insignias-list-container'>
+        {
+          SKILLS && Object.entries(SKILLS).map(([skillName, skillData]) => (
+            <div className='insignia' key={skillName} onClick={() => window.open(skillData.url, '_blank')}>
+              <img className='insignia-icon' src={skillData.imagePath} alt={`${skillName} icon`} />
+            </div>
+          ))
+        }
       </div>
     )
   }

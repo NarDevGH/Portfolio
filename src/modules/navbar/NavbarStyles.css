@@ -36,6 +36,23 @@
     width: 100%;
 }
 
+.region-container{
+    display: flex;
+    align-items: left;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.region-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.region-label{
+    font-weight: lighter;
+    color: rgb(165, 165, 165);
+}
+
 .right-container{
     margin-top: 1rem;
     margin-right: 1rem;
