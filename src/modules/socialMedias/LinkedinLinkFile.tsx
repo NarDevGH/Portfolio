@@ -1,8 +1,9 @@
 import SocialMedia from './base/SocialMediaFile'
+import linkedinIcon from '../../assets/images/icons/linkedin_icon.webp'
 
 export default function LinkedinLink() {
     const url = 'https://www.linkedin.com/in/bautista-mateo/'
-    const iconPath = 'src/assets/images/icons/linkedin_icon.webp'
+    const iconPath = linkedinIcon
     const label = 'LinkedIn'
 
     return (

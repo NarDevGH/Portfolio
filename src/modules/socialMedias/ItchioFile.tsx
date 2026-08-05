@@ -1,8 +1,9 @@
 import SocialMedia from './base/SocialMediaFile'
+import itchIcon from '../../assets/images/icons/itch_icon.webp'
 
 export default function ItchioLink() {
     const url = 'https://nardev.itch.io/'
-    const iconPath = 'src/assets/images/icons/itch_icon.webp'
+    const iconPath = itchIcon
     const label = 'Itch.io'
 
     return (

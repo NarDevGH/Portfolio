@@ -1,8 +1,9 @@
 import SocialMedia from './base/SocialMediaFile'
+import githubIcon from '../../assets/images/icons/github_icon.png'
 
 export default function GithubLink() {
     const url = 'https://github.com/NarDevGH'
-    const iconPath = 'src/assets/images/icons/github_icon.png'
+    const iconPath = githubIcon
     const label = 'Github'
 
     return (
