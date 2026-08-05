@@ -1,8 +1,9 @@
 import SocialMedia from './base/SocialMediaFile'
+import artstationIcon from '../../assets/images/icons/artstation_icon.png'
 
 export default function ArtstationLink() {
     const url = 'https://www.artstation.com/nardev'
-    const iconPath = 'src/assets/images/icons/artstation_icon.png'
+    const iconPath = artstationIcon
     const label = 'ArtStation'
 
     return (

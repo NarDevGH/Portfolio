@@ -5,6 +5,7 @@ import GithubLink from "../socialMedias/GithubLinkFile";
 import ArtstationLink from "../socialMedias/ArtstationLinkFile";
 import LinkedinLink from "../socialMedias/LinkedinLinkFile";
 import ItchioLink from "../socialMedias/ItchioFile";
+import argentinaFlag from '../../assets/images/icons/flags/argentina.png'
 
 export default function NavBar(){
     const profilePicUrl = 'https://i.imgur.com/7nh5dGm.png';
@@ -34,7 +35,7 @@ export default function NavBar(){
                     <hr/>
                     <h3>Nardev</h3>
                 <div className="region-container">
-                    <img className="region-icon" src="src/assets/images/icons/flags/argentina.png" alt="Argentina flag." />
+                    <img className="region-icon" src={argentinaFlag} alt="Argentina flag." />
                     <p className="region-label">Argentina</p>
                 </div>
                 </div>
